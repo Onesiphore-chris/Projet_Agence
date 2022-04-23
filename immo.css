@@ -1,0 +1,217 @@
+@font-face {
+    font-family:'Arial';
+    src: url('fonts/ARIAL.TTF') format("opentype");
+    font-weight: 400;
+}
+ @font-face {
+        font-family:'Arial';
+        src: url('fonts/ArialCEMTBlack.ttf') format("opentype");
+        font-weight: 400;
+    }
+@font-face {
+    font-family: 'Myriad';
+    src: url('fonts/MYRIADPRO-REGULAR.OTF') format("opentype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'brush';
+    src: url('fonts/BRUSHSCI.ttf') format("opentype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'brush';
+    src: url('fonts/brush\ script\ mt\ kursiv.ttf') format("opentype");
+    font-weight: 400;
+}
+/* *{
+    box-sizing: border-box;
+} */
+body, html{
+    font-size: 16px;
+    font-family: Arial;
+}
+.icone{
+text-align: center;
+margin: 10px;
+top: 0;
+left: 50;
+right: 0px;
+color: #ff984b;
+
+}
+.topbar{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 10px 3px rgb(10, 10, 10, 0.2); ;
+}
+.topbar nav{
+float: left;
+font-size: 14px;
+}
+.topbar nav a {
+    color: #ff984b;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 0 13px;
+}
+.topbar nav a:hover, .topbar nav a.active { color: #000;
+    color: #000; 
+}
+.social{
+    float: right;
+    font-size: 14px;
+    position: relative;
+    margin-top: 20px;
+    left: 0;
+    right: 0;
+    padding: 0 12;
+    opacity: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.social a:hover {
+    opacity: 2;
+}
+ .maison{
+    width: 100%;
+    height: 700px;
+    background:no-repeat center center/ cover url("img/full_image_1.jpg");
+    margin-top: 140px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 6;
+} 
+ .ensene{
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+    align-items: center;
+    font-size: x-large;
+    z-index: 1;
+    background-color: #2c2c2c;
+} 
+#flix{
+    text-align: center;
+    height: 50px;
+    font-size: 40px;
+    overflow: hidden;
+    
+}
+
+#flix h1 {
+     height: 100%;
+     padding: 6px 13px;
+     margin-bottom: 45px; 
+    display: block;
+    text-align: center;
+    font-size:14px;
+}
+
+#flix h1:first-child{
+    animation: show 5s linear infinite;
+    background-color: #42c58a;
+}
+#flix h1{
+    background:#42c58a;
+}
+#flix h1:first-child{
+    background: #4ec7f3;
+}
+ #flix h1:last-child{
+    background: #dc143c;
+}  
+ @keyframes show {
+    0% { margin-top: -270px }
+    5% { margin-top: -180px }
+    33% { margin-top: -180px }
+    38%{ margin-top: -90px;}
+    66%{ margin-top: -90px;}
+    71%{ margin-top: 0px;}
+    99.99%{ margin-top: 0px;}
+    100%{ margin-top: -270px;}
+}
+.symbol{
+    font-size: 25px;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    flex-direction: row;
+    margin-left: auto;
+    font-family: brush;
+   
+}
+
+.main{
+    float: left;
+    height: 154px;
+    background: #000;
+    width: 30%;
+    position: relative;
+}
+.main-mot{
+    color: #fff;
+    margin:auto;
+    font-size: 28px;
+    width: fit-content;
+}
+.main-mot-1{
+    font-size: 10px;
+    font-family: inherit;
+    line-height:1;
+    text-align: center;
+}
+.A2{
+    color: #ff984b;
+}
+.sidebar {
+    position: relative;
+    float: right;
+    height: 154px;
+    width: 70%;
+    background: #2c2c2c;
+}
+
+form{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.content{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button{
+    text-align: center;
+    color: white;
+    background-color: #ff984b;
+    width: 100px;
+    text-decoration: none;
+    align-self: flex-end;
+
+}
